@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)file:///C:/Users/TatjanaAntsiparovich/Downloads/ai-chat-code-2026-06-17T08-58-31-407Z.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Früher und heute – A2 Grammatik</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #1a1a2e;
+            overflow: hidden;
+        }
+
+        .slide {
+            display: none;
+            width: 100vw;
+            height: 100vh;
+            padding: 35px 50px;
+            position: absolute;
+            top: 0; left: 0;
+            animation: fadeIn 0.4s ease;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .slide.active { display: flex; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* PADLET-STYLE BACKGROUNDS */
+        .slide-1  { background: linear-gradient(135deg, #0f3460 0%, #16213e 100%); }
+        .slide-2  { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+        .slide-3  { background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%); }
+        .slide-4  { background: linear-gradient(135deg, #16213e 0%, #0f3460 100%); }
+        .slide-5  { background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%); }
+        .slide-6  { background: linear-gradient(135deg, #0f3460 0%, #16213e 100%); }
+        .slide-7  { background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%); }
+        .slide-8  { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+        .slide-9  { background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%); }
+        .slide-10 { background: linear-gradient(135deg, #16213e 0%, #0f3460 100%); }
+        .slide-11 { background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%); }
+
+        /* PADLET CARD COLORS */
+        :root {
+            --pad-yellow:  #ffd166;
+            --pad-pink:    #ef476f;
+            --pad-blue:    #118ab2;
+            --pad-green:   #06d6a0;
+            --pad-purple:  #9b5de5;
+            --pad-orange:  #f4845f;
+            --pad-teal:    #4cc9f0;
+            --pad-red:     #e63946;
+            --pad-lime:    #b5e48c;
+            --pad-lavender:#c77dff;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: white;
+            text-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 1.9em;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.1em;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 4px;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        /* PADLET-STYLE TABLES */
+        .table-wrap {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        .table-wrap thead tr {
+            color: white;
+            font-weight: 700;
+        }
+
+        .table-wrap th {
+            padding: 12px 14px;
+            text-align: left;
+            font-size: 0.95em;
+        }
+
+        .table-wrap td {
+            padding: 9px 14px;
+            border-bottom: 1px solid #f0f0f0;
+            color: #2d2d2d;
+            vertical-align: middle;
+        }
+
+        .table-wrap tr:last-child td { border-bottom: none; }
+        .table-wrap tr:hover td { background: #fafafa; }
+
+        /* HEADER COLORS */
+        .th-yellow thead tr { background: var(--pad-yellow); color: #1a1a2e; }
+        .th-pink   thead tr { background: var(--pad-pink); }
+        .th-blue   thead tr { background: var(--pad-blue); }
+        .th-green  thead tr { background: var(--pad-green); color: #1a1a2e; }
+        .th-purple thead tr { background: var(--pad-purple); }
+        .th-orange thead tr { background: var(--pad-orange); }
+        .th-teal   thead tr { background: var(--pad-teal); color: #1a1a2e; }
+
+        /* BADGES */
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.88em;
+        }
+
+        .b-yellow  { background: #fff3cd; color: #856404; }
+        .b-pink    { background: #fce4ec; color: #880e4f; }
+        .b-blue    { background: #e3f2fd; color: #0d47a1; }
+        .b-green   { background: #e8f5e9; color: #1b5e20; }
+        .b-purple  { background: #f3e5f5; color: #4a148c; }
+        .b-orange  { background: #fff3e0; color: #e65100; }
+        .b-teal    { background: #e0f7fa; color: #006064; }
+        .b-red     { background: #ffebee; color: #b71c1c; }
+
+        /* PADLET CARDS */
+        .pad-card {
+            border-radius: 14px;
+            padding: 18px 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            color: #1a1a2e;
+        }
+
+        .pad-card h3 { color: #1a1a2e; text-shadow: none; font-size: 1em; }
+        .pad-card .step {
+            background: rgba(0,0,0,0.07);
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin: 6px 0;
+            font-size: 0.88em;
+            color: #1a1a2e;
+        }
+
+        .pc-yellow  { background: var(--pad-yellow); }
+        .pc-pink    { background: #fce4ec; }
+        .pc-blue    { background: #e3f2fd; }
+        .pc-green   { background: #e8f5e9; }
+        .pc-purple  { background: #f3e5f5; }
+        .pc-orange  { background: #fff3e0; }
+        .pc-teal    { background: #e0f7fa; }
+        .pc-lavender{ background: #ede7f6; }
+        .pc-lime    { background: #f1f8e9; }
+        .pc-white   { background: #ffffff; }
+
+        /* DARK CARDS for activities */
+        .dark-card {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 14px;
+            padding: 18px 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        .dark-card h3 { color: white; font-size: 1em; }
+        .dark-card .step {
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin: 6px 0;
+            font-size: 0.88em;
+            color: rgba(255,255,255,0.9);
+        }
+
+        /* GRIDS */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+        .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; }
+
+        /* FORMULA */
+        .formula {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 14px;
+            padding: 14px 24px;
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin: 12px 0;
+        }
+
+        .example {
+            background: rgba(255,255,255,0.08);
+            border-left: 4px solid var(--pad-teal);
+            padding: 10px 16px;
+            border-radius: 0 10px 10px 0;
+            color: rgba(255,255,255,0.9);
+            margin: 6px 0;
+            font-size: 0.9em;
+        }
+
+        /* INFO BOX – Padlet style */
+        .info-box {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 20px 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            border-left: 6px solid var(--pad-blue);
+        }
+
+        .info-box p { color: #2d2d2d; font-size: 0.92em; line-height: 1.6; margin-bottom: 8px; }
+        .info-box p:last-child { margin-bottom: 0; }
+        .info-box strong { color: #0f3460; }
+
+        /* BINGO GRID */
+        .bingo-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+
+        .bingo-cell {
+            border-radius: 12px;
+            padding: 12px 8px;
+            text-align: center;
+            font-size: 0.78em;
+            font-weight: 600;
+            color: #1a1a2e;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            line-height: 1.3;
+            min-height: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bingo-cell:hover { transform: scale(1.05); }
+        .bingo-cell.marked {
+            opacity: 0.4;
+            transform: scale(0.95);
+            text-decoration: line-through;
+        }
+
+        .bingo-free {
+            background: #ffd166 !important;
+            font-size: 1em;
+            font-weight: 800;
+        }
+
+        /* QUIZ */
+        .quiz-btn {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.25);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.25s;
+            width: 100%;
+            text-align: left;
+        }
+
+        .quiz-btn:hover:not(:disabled) {
+            background: rgba(255,255,255,0.2);
+            transform: translateX(4px);
+        }
+
+        .quiz-btn.correct { background: rgba(6,214,160,0.35); border-color: var(--pad-green); }
+        .quiz-btn.wrong   { background: rgba(239,71,111,0.35); border-color: var(--pad-pink); }
+
+        /* VERB PILL */
+        .vpill {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 0.82em;
+            margin: 3px;
+        }
+
+        /* NAVIGATION */
+        .nav {
+            position: fixed;
+            bottom: 22px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            z-index: 200;
+        }
+
+        .nav button {
+            background: rgba(255,255,255,0.15);
+            border: 2px solid rgba(255,255,255,0.35);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 28px;
+            font-size: 0.95em;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            transition: all 0.25s;
+            font-weight: 600;
+        }
+
+        .nav button:hover { background: rgba(255,255,255,0.28); transform: scale(1.04); }
+
+        .counter {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.88em;
+            font-weight: 600;
+            background: rgba(0,0,0,0.3);
+            padding: 7px 16px;
+            border-radius: 18px;
+        }
+
+        .progress {
+            position: fixed;
+            top: 0; left: 0;
+            height: 3px;
+            background: var(--pad-teal);
+            transition: width 0.4s ease;
+            z-index: 300;
+        }
+
+        /* SCROLLABLE */
+        .scrollable {
+            overflow-y: auto;
+            max-height: 62vh;
+        }
+
+        .scrollable::-webkit-scrollbar { width: 5px; }
+        .scrollable::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+        .scrollable::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; }
+
+        /* MEMORY CARD GAME */
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .mem-card {
+            background: rgba(255,255,255,0.12);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 12px;
+            padding: 12px 8px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 0.82em;
+            color: white;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s;
+            font-weight: 600;
+        }
+
+        .mem-card:hover { background: rgba(255,255,255,0.22); }
+        .mem-card.flipped { background: var(--pad-teal); color: #1a1a2e; border-color: var(--pad-teal); }
+        .mem-card.matched { background: var(--pad-green); color: #1a1a2e; border-color: var(--pad-green); opacity: 0.7; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.4em; }
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .slide { padding: 20px; }
+            .bingo-grid { grid-template-columns: repeat(3,1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="progress" id="progress" style="width: 9.09091%;"></div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 1 – TITLE
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-1 active">
+    <h1>Früher und heute 🕰️</h1>
+    <p class="subtitle">Grammatik-Review | Niveau A2 | Online-Kurs</p>
+    <div style="margin: 18px 0;">
+        <span class="tag" style="background:var(--pad-yellow);">✅ Perfekt</span>
+        <span class="tag" style="background:var(--pad-teal);">✅ war / hatte</span>
+        <span class="tag" style="background:var(--pad-purple);color:white;">✅ Modalverben</span>
+        <span class="tag" style="background:var(--pad-green);">✅ Starke Verben</span>
+    </div>
+
+    <div class="info-box" style="max-width: 700px; margin-top: 20px;">
+        <p><strong>Präteritum oder Perfekt?</strong></p>
+        <p>Man benutzt das <strong>Präteritum</strong> vor allem beim Schreiben von offiziellen Texten (Biografien, Zeitungsartikel, Literatur…).</p>
+        <p>Beim Sprechen und beim Schreiben von informellen Texten (E-Mails, Chats…) benutzt man meist das <strong>Perfekt</strong>.</p>
+        <p>Einige Verben verwendet man fast immer im <strong>Präteritum</strong>: <em>haben, sein</em>, die Modalverben (<em>können, müssen…</em>) sowie einige unregelmäßige Verben (<em>geben, kommen, nehmen…</em>).</p>
+    </div>
+
+    <p style="color:rgba(255,255,255,0.5); font-size:0.85em; margin-top:20px;">→ Pfeiltasten oder Buttons zum Navigieren</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 2 – SEIN & HABEN PRÄTERITUM
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-2">
+    <h2>sein &amp; haben im Präteritum 🔴</h2>
+    <div class="grid-2">
+        <div class="table-wrap th-pink">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Person</th>
+                        <th>sein → war</th>
+                        <th>haben → hatte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>ich</strong></td><td><span class="badge b-pink">war</span></td><td><span class="badge b-pink">hatte</span></td></tr>
+                    <tr><td><strong>du</strong></td><td><span class="badge b-pink">warst</span></td><td><span class="badge b-pink">hattest</span></td></tr>
+                    <tr><td><strong>er/sie/es</strong></td><td><span class="badge b-pink">war</span></td><td><span class="badge b-pink">hatte</span></td></tr>
+                    <tr><td><strong>wir</strong></td><td><span class="badge b-pink">waren</span></td><td><span class="badge b-pink">hatten</span></td></tr>
+                    <tr><td><strong>ihr</strong></td><td><span class="badge b-pink">wart</span></td><td><span class="badge b-pink">hattet</span></td></tr>
+                    <tr><td><strong>sie/Sie</strong></td><td><span class="badge b-pink">waren</span></td><td><span class="badge b-pink">hatten</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+            <div class="pad-card pc-pink">
+                <h3>💡 Wann Präteritum?</h3>
+                <div class="step">📝 <strong>sein &amp; haben</strong> → immer Präteritum!</div>
+                <div class="step">🗣️ Im Gespräch UND beim Schreiben</div>
+                <div class="step">❌ „Ich bin gewesen" – zu formal / unnatürlich</div>
+            </div>
+            <div class="pad-card pc-lavender">
+                <h3>✏️ Beispiele</h3>
+                <div class="step">Als Kind <strong>war</strong> ich sehr schüchtern.</div>
+                <div class="step">Ich <strong>hatte</strong> Heimweh auf meiner ersten Dienstreise.</div>
+                <div class="step">Wir <strong>waren</strong> gestern im Meeting – es <strong>war</strong> lang! 😅</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 3 – MODALVERBEN PRÄTERITUM
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-3">
+    <h2>Modalverben im Präteritum 🔵</h2>
+    <div class="grid-2">
+        <div class="table-wrap th-blue">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Infinitiv</th>
+                        <th>Präsens</th>
+                        <th>Präteritum</th>
+                        <th>Bedeutung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>können</strong></td><td>kann</td><td><span class="badge b-blue">konnte</span></td><td>Fähigkeit</td></tr>
+                    <tr><td><strong>wollen</strong></td><td>will</td><td><span class="badge b-blue">wollte</span></td><td>Wunsch</td></tr>
+                    <tr><td><strong>müssen</strong></td><td>muss</td><td><span class="badge b-blue">musste</span></td><td>Pflicht</td></tr>
+                    <tr><td><strong>dürfen</strong></td><td>darf</td><td><span class="badge b-blue">durfte</span></td><td>Erlaubnis</td></tr>
+                    <tr><td><strong>sollen</strong></td><td>soll</td><td><span class="badge b-blue">sollte</span></td><td>Auftrag</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+            <div class="pad-card pc-blue">
+                <h3>🔑 Konjugation: können (Muster für alle!)</h3>
+                <div class="step">ich <strong>konnte</strong> | du <strong>konntest</strong></div>
+                <div class="step">er/sie <strong>konnte</strong> | wir <strong>konnten</strong></div>
+                <div class="step">ihr <strong>konntet</strong> | sie/Sie <strong>konnten</strong></div>
+                <div class="step" style="background:rgba(17,138,178,0.15);">💡 wollte / musste / durfte / sollte → gleiche Endungen!</div>
+            </div>
+            <div class="pad-card pc-teal">
+                <h3>✏️ Beispiele</h3>
+                <div class="step">Mit 18 <strong>durfte</strong> ich endlich Auto fahren. 🚗</div>
+                <div class="step">Als Kind <strong>musste</strong> ich früh aufstehen. 😴</div>
+                <div class="step">Ich <strong>wollte</strong> schon lange ein Sabbatical machen. 🏖️</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 4 – PERFEKT BILDUNG
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-4">
+    <h2>Perfekt – Bildung 🟢</h2>
+    <div class="formula">haben / sein (Präsens) &nbsp;+&nbsp; Partizip II</div>
+    <div class="grid-2" style="margin-top:12px;">
+        <div class="table-wrap th-green">
+            <table>
+                <thead>
+                    <tr><th>Typ</th><th>Regel</th><th>Beispiel</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Regelmäßig</td><td>ge- + Stamm + -t</td><td><span class="badge b-green">gemacht, gespielt</span></td></tr>
+                    <tr><td>Trennbar</td><td>Präfix + ge- + -t</td><td><span class="badge b-green">aufgemacht</span></td></tr>
+                    <tr><td>-ieren</td><td>kein ge-! + -t</td><td><span class="badge b-green">studiert</span></td></tr>
+                    <tr><td>Untrennbar</td><td>kein ge-! + -t/-en</td><td><span class="badge b-green">besucht</span></td></tr>
+                    <tr><td>Unregelmäßig</td><td>ge- + Stamm* + -en</td><td><span class="badge b-green">gegessen, geschrieben</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+            <div class="pad-card pc-green">
+                <h3>🚶 haben oder sein?</h3>
+                <div class="step">✅ <strong>sein</strong>: Bewegung A→B (fahren, gehen, fliegen, reisen)</div>
+                <div class="step">✅ <strong>sein</strong>: Zustandsveränderung (aufwachen, werden)</div>
+                <div class="step">✅ <strong>sein</strong>: sein, bleiben, passieren</div>
+                <div class="step">✅ <strong>haben</strong>: alle anderen Verben</div>
+            </div>
+            <div class="pad-card pc-lime">
+                <h3>✏️ Beispiele</h3>
+                <div class="step">Ich <strong>habe</strong> einen Tanzkurs <strong>gemacht</strong>. 💃</div>
+                <div class="step">Ich <strong>bin</strong> nach Berlin <strong>gereist</strong>. ✈️</div>
+                <div class="step">Ich <strong>bin</strong> bis Mitternacht <strong>aufgeblieben</strong>. 🌙</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 5 – STARKE VERBEN
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-5">
+    <h2>Starke Verben – Partizip II 💪</h2>
+    <div class="table-wrap th-purple scrollable">
+        <table>
+            <thead>
+                <tr><th>Infinitiv</th><th>Partizip II</th><th>Hilfsverb</th><th>Beispiel</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>essen</td><td><span class="badge b-purple">gegessen</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe Sushi gegessen. 🍣</td></tr>
+                <tr><td>trinken</td><td><span class="badge b-purple">getrunken</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe Kaffee getrunken. ☕</td></tr>
+                <tr><td>singen</td><td><span class="badge b-purple">gesungen</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe ein Liebeslied gesungen. 🎤</td></tr>
+                <tr><td>schwimmen</td><td><span class="badge b-purple">geschwommen</span></td><td><span class="badge b-pink">sein</span></td><td>Ich bin im Meer geschwommen. 🏊</td></tr>
+                <tr><td>fahren</td><td><span class="badge b-purple">gefahren</span></td><td><span class="badge b-pink">sein</span></td><td>Ich bin mit dem Bus gefahren. 🚌</td></tr>
+                <tr><td>fliegen</td><td><span class="badge b-purple">geflogen</span></td><td><span class="badge b-pink">sein</span></td><td>Ich bin nach Japan geflogen. ✈️</td></tr>
+                <tr><td>gehen</td><td><span class="badge b-purple">gegangen</span></td><td><span class="badge b-pink">sein</span></td><td>Ich bin in einen Club gegangen. 🎉</td></tr>
+                <tr><td>bleiben</td><td><span class="badge b-purple">geblieben</span></td><td><span class="badge b-pink">sein</span></td><td>Ich bin bis Mitternacht aufgeblieben. 🌙</td></tr>
+                <tr><td>schreiben</td><td><span class="badge b-purple">geschrieben</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe Code geschrieben. 💻</td></tr>
+                <tr><td>lesen</td><td><span class="badge b-purple">gelesen</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe das Buch gelesen. 📚</td></tr>
+                <tr><td>sprechen</td><td><span class="badge b-purple">gesprochen</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe mit dem Chef gesprochen. 👔</td></tr>
+                <tr><td>nehmen</td><td><span class="badge b-purple">genommen</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe den Zug genommen. 🚂</td></tr>
+                <tr><td>bekommen</td><td><span class="badge b-purple">bekommen</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe eine Spritze bekommen. 💉</td></tr>
+                <tr><td>treffen</td><td><span class="badge b-purple">getroffen</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe einen Freund getroffen. 🤝</td></tr>
+                <tr><td>sehen</td><td><span class="badge b-purple">gesehen</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe einen Film gesehen. 🎬</td></tr>
+                <tr><td>hören</td><td><span class="badge b-purple">gehört</span></td><td><span class="badge b-green">haben</span></td><td>Ich habe die Beatles gehört. 🎵</td></tr>
+                <tr><td>kommen</td><td><span class="badge b-purple">gekommen</span></td><td><span class="badge b-pink">sein</span></td><td>Ich bin zu spät gekommen. 😬</td></tr>
+                <tr><td>laufen</td><td><span class="badge b-purple">gelaufen</span></td><td><span class="badge b-pink">sein</span></td><td>Ich bin 10 km gelaufen. 🏃</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 6 – MINI QUIZ
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-6">
+    <h2>Mini-Quiz ❓ Richtig oder falsch?</h2>
+    <div class="grid-2">
+        <div class="dark-card">
+            <h3>1. Als Kind _____ ich keinen Spinat essen.</h3>
+            <button class="quiz-btn" onclick="qa(this,false)">a) konnte nicht</button>
+            <button class="quiz-btn" onclick="qa(this,true)">b) wollte nicht</button>
+            <button class="quiz-btn" onclick="qa(this,false)">c) durfte nicht</button>
+        </div>
+        <div class="dark-card">
+            <h3>2. Ich _____ schon mal in einem Fluss _____.</h3>
+            <button class="quiz-btn" onclick="qa(this,false)">a) habe … geschwommen</button>
+            <button class="quiz-btn" onclick="qa(this,true)">b) bin … geschwommen</button>
+            <button class="quiz-btn" onclick="qa(this,false)">c) habe … schwimmen</button>
+        </div>
+        <div class="dark-card">
+            <h3>3. Mit 18 Jahren _____ ich endlich Auto fahren.</h3>
+            <button class="quiz-btn" onclick="qa(this,false)">a) musste</button>
+            <button class="quiz-btn" onclick="qa(this,false)">b) wollte</button>
+            <button class="quiz-btn" onclick="qa(this,true)">c) durfte</button>
+        </div>
+        <div class="dark-card">
+            <h3>4. Ich _____ Heimweh auf meiner ersten Dienstreise.</h3>
+            <button class="quiz-btn" onclick="qa(this,false)">a) bin gehabt</button>
+            <button class="quiz-btn" onclick="qa(this,true)">b) hatte</button>
+            <button class="quiz-btn" onclick="qa(this,false)">c) habe gehabt</button>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 7 – BINGO (PERFEKT + PRÄTERITUM)
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-7">
+    <h2>🎯 BINGO – Hast du schon mal…? / Wolltest du…?</h2>
+    <div class="grid-2" style="align-items:start;">
+        <div>
+            <div class="bingo-grid" id="bingoGrid">
+                <!-- Row 1 -->
+                <div class="bingo-cell" style="background:var(--pad-yellow);" onclick="markCell(this)">✈️<br>alleine gereist</div>
+                <div class="bingo-cell" style="background:var(--pad-teal);" onclick="markCell(this)">🎤<br>Karaoke gesungen</div>
+                <div class="bingo-cell" style="background:var(--pad-pink);color:white;" onclick="markCell(this)">🔥<br>Lagerfeuer gemacht</div>
+                <div class="bingo-cell" style="background:var(--pad-green);" onclick="markCell(this)">🚴<br>Radtour gemacht</div>
+                <!-- Row 2 -->
+                <div class="bingo-cell" style="background:var(--pad-purple);color:white;" onclick="markCell(this)">🌱<br>Baum gepflanzt</div>
+                <div class="bingo-cell" style="background:var(--pad-orange);" onclick="markCell(this)">💔<br>Liebeskummer gehabt</div>
+                <div class="bingo-cell bingo-free" onclick="markCell(this)">⭐<br>FREI!</div>
+                <div class="bingo-cell" style="background:var(--pad-lavender);" onclick="markCell(this)">🐕<br>Tier adoptiert</div>
+                <!-- Row 3 -->
+                <div class="bingo-cell" style="background:var(--pad-teal);" onclick="markCell(this)">💻<br>Sabbatical gemacht</div>
+                <div class="bingo-cell" style="background:var(--pad-yellow);" onclick="markCell(this)">🏊<br>im Meer geschwommen</div>
+                <div class="bingo-cell" style="background:var(--pad-pink);color:white;" onclick="markCell(this)">🎉<br>Fest mit 100 Leuten</div>
+                <div class="bingo-cell" style="background:var(--pad-green);" onclick="markCell(this)">🤸<br>Salto gemacht</div>
+                <!-- Row 4 -->
+                <div class="bingo-cell" style="background:var(--pad-orange);" onclick="markCell(this)">🌿<br>vegan gelebt</div>
+                <div class="bingo-cell" style="background:var(--pad-purple);color:white;" onclick="markCell(this)">🏆<br>Triathlon gemacht</div>
+                <div class="bingo-cell" style="background:var(--pad-lavender);" onclick="markCell(this)">🎸<br>Instrument gelernt</div>
+                <div class="bingo-cell" style="background:var(--pad-yellow);" onclick="markCell(this)">🌍<br>in 3+ Ländern gewesen</div>
+            </div>
+            <div id="bingoMsg" style="color:var(--pad-yellow); font-size:1.2em; font-weight:700; text-align:center; margin-top:10px; min-height:30px;"></div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+            <div class="pad-card pc-yellow">
+                <h3>📋 So geht's:</h3>
+                <div class="step">1. Frag im Chat: <strong>„Hast du schon mal…?"</strong></div>
+                <div class="step">2. Oder: <strong>„Wolltest du als Kind…?"</strong></div>
+                <div class="step">3. Jemand sagt JA → klick das Feld ✅</div>
+                <div class="step">4. <strong>4 in einer Reihe = BINGO! 🎉</strong></div>
+            </div>
+            <div class="pad-card pc-teal">
+                <h3>💬 Beispiele:</h3>
+                <div class="step">„<strong>Bist</strong> du schon mal alleine <strong>gereist</strong>?"</div>
+                <div class="step">„<strong>Hast</strong> du schon mal Karaoke <strong>gesungen</strong>?"</div>
+                <div class="step">„<strong>Wolltest</strong> du als Kind Astronaut werden?"</div>
+                <div class="step">„<strong>Musstest</strong> du als Kind früh aufstehen?"</div>
+            </div>
+            <div class="pad-card pc-lavender">
+                <h3>🎯 Benutze:</h3>
+                <div class="step"><span class="vpill" style="background:#e3f2fd;color:#0d47a1;">Perfekt</span> Hast du … gemacht? Bist du … gereist?</div>
+                <div class="step"><span class="vpill" style="background:#fce4ec;color:#880e4f;">Präteritum</span> Wolltest / Musstest / Durftest du…?</div>
+                <div class="step"><span class="vpill" style="background:#e8f5e9;color:#1b5e20;">war/hatte</span> Warst du…? Hattest du…?</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 8 – MEMORY MATCH (Infinitiv ↔ Partizip II)
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-8">
+    <h2>🃏 Memory Match – Infinitiv &amp; Partizip II</h2>
+    <div style="display:flex; gap:18px; align-items:start;">
+        <div style="flex:1;">
+            <div class="memory-grid" id="memoryGrid"><div class="mem-card" data-id="1" data-text="gefahren" data-color="var(--pad-teal)">?</div><div class="mem-card" data-id="7" data-text="gesprochen" data-color="#4cc9f0">?</div><div class="mem-card" data-id="1" data-text="fahren" data-color="var(--pad-teal)">?</div><div class="mem-card" data-id="4" data-text="getrunken" data-color="var(--pad-purple)">?</div><div class="mem-card" data-id="0" data-text="gegessen" data-color="var(--pad-yellow)">?</div><div class="mem-card" data-id="3" data-text="gehen" data-color="var(--pad-green)">?</div><div class="mem-card" data-id="5" data-text="sehen" data-color="var(--pad-orange)">?</div><div class="mem-card" data-id="0" data-text="essen" data-color="var(--pad-yellow)">?</div><div class="mem-card" data-id="6" data-text="geflogen" data-color="var(--pad-lavender)">?</div><div class="mem-card" data-id="5" data-text="gesehen" data-color="var(--pad-orange)">?</div><div class="mem-card" data-id="7" data-text="sprechen" data-color="#4cc9f0">?</div><div class="mem-card" data-id="3" data-text="gegangen" data-color="var(--pad-green)">?</div><div class="mem-card" data-id="2" data-text="geschrieben" data-color="var(--pad-pink)">?</div><div class="mem-card" data-id="2" data-text="schreiben" data-color="var(--pad-pink)">?</div><div class="mem-card" data-id="4" data-text="trinken" data-color="var(--pad-purple)">?</div><div class="mem-card" data-id="6" data-text="fliegen" data-color="var(--pad-lavender)">?</div></div>
+            <div style="display:flex; gap:12px; margin-top:12px; align-items:center;">
+                <div id="memScore" style="color:var(--pad-yellow); font-weight:700; font-size:1em;">Paare: 0 / 8</div>
+                <button onclick="initMemory()" style="background:var(--pad-teal);border:none;color:#1a1a2e;padding:8px 18px;border-radius:10px;cursor:pointer;font-weight:700;">🔄 Neu mischen</button>
+            </div>
+        </div>
+        <div style="width:240px; display:flex; flex-direction:column; gap:10px;">
+            <div class="pad-card pc-teal">
+                <h3>📋 So geht's:</h3>
+                <div class="step">1. Klick auf eine Karte</div>
+                <div class="step">2. Finde das passende Paar:<br><strong>Infinitiv ↔ Partizip II</strong></div>
+                <div class="step">3. Wer findet alle 8 Paare zuerst? 🏆</div>
+            </div>
+            <div class="pad-card pc-yellow">
+                <h3>💡 Tipp:</h3>
+                <div class="step">Sag den Satz laut!<br>„Ich habe … <strong>gegessen</strong>."<br>„Ich bin … <strong>gefahren</strong>."</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 9 – 2 WAHRHEITEN 1 LÜGE
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-9">
+    <h2>🤥 2 Wahrheiten, 1 Lüge – Breakout Rooms</h2>
+    <div class="grid-3">
+        <div class="pad-card pc-yellow">
+            <span style="font-size:2em;">✍️</span>
+            <h3>Schritt 1: Schreib</h3>
+            <div class="step">3 Sätze über dich</div>
+            <div class="step">2 sind wahr ✅</div>
+            <div class="step">1 ist eine Lüge 🤥</div>
+        </div>
+        <div class="pad-card pc-teal">
+            <span style="font-size:2em;">💬</span>
+            <h3>Schritt 2: Diskutiert</h3>
+            <div class="step">Lies deine Sätze vor</div>
+            <div class="step">Gruppe rät: „Das ist die Lüge!"</div>
+            <div class="step">Begründe: „weil…"</div>
+        </div>
+        <div class="pad-card pc-purple">
+            <span style="font-size:2em;">🏆</span>
+            <h3>Schritt 3: Punkte</h3>
+            <div class="step">Richtig geraten = 1 Punkt</div>
+            <div class="step">Lüge nicht erkannt = 2 Punkte!</div>
+            <div class="step">Wer gewinnt? 😄</div>
+        </div>
+    </div>
+    <div style="margin-top:16px;">
+        <div class="table-wrap th-orange">
+            <table>
+                <thead><tr><th>Struktur</th><th>Beispiel (EPAM-Themen 😄)</th></tr></thead>
+                <tbody>
+                    <tr><td><span class="badge b-blue">Perfekt</span></td><td>Ich habe schon mal 24h ohne Pause programmiert. / Ich bin alleine nach Japan gereist.</td></tr>
+                    <tr><td><span class="badge b-pink">war / hatte</span></td><td>Ich war schon mal auf einer Dienstreise in 5 Ländern gleichzeitig. / Ich hatte als Student keinen Computer.</td></tr>
+                    <tr><td><span class="badge b-purple">Modalverb</span></td><td>Als Kind wollte ich Astronaut werden. / Mit 16 durfte ich schon Auto fahren.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 10 – INTERVIEW AKTIVITÄT
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-10">
+    <h2>🎙️ Interview – „Mein Partner früher"</h2>
+    <div class="grid-2">
+        <div class="table-wrap th-teal scrollable">
+            <table>
+                <thead><tr><th>#</th><th>Frage</th><th>Antwort</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td>Was <strong>wolltest</strong> du als Kind werden?</td><td style="color:#bbb;font-style:italic;">_______</td></tr>
+                    <tr><td>2</td><td>Was <strong>konntest</strong> du mit 10 Jahren schon gut?</td><td style="color:#bbb;font-style:italic;">_______</td></tr>
+                    <tr><td>3</td><td>Was <strong>musstest</strong> du als Kind machen?</td><td style="color:#bbb;font-style:italic;">_______</td></tr>
+                    <tr><td>4</td><td>Was <strong>durftest</strong> du als Kind nicht?</td><td style="color:#bbb;font-style:italic;">_______</td></tr>
+                    <tr><td>5</td><td><strong>Warst</strong> du schon mal auf einer Dienstreise? Wo?</td><td style="color:#bbb;font-style:italic;">_______</td></tr>
+                    <tr><td>6</td><td><strong>Hast</strong> du schon mal etwas Verrücktes <strong>gegessen</strong>?</td><td style="color:#bbb;font-style:italic;">_______</td></tr>
+                    <tr><td>7</td><td>Was <strong>wolltest</strong> du schon lange machen?</td><td style="color:#bbb;font-style:italic;">_______</td></tr>
+                    <tr><td>8</td><td><strong>Hast</strong> du schon mal ein Sabbatical <strong>gemacht</strong>?</td><td style="color:#bbb;font-style:italic;">_______</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+            <div class="pad-card pc-teal">
+                <h3>🎤 Präsentation im Plenum:</h3>
+                <div class="step">„Mein Partner heißt…"</div>
+                <div class="step">„Als Kind <strong>wollte</strong> er/sie…"</div>
+                <div class="step">„Mit ___ Jahren <strong>konnte</strong> er/sie schon…"</div>
+                <div class="step">„Er/Sie <strong>hat</strong> noch nie… aber er/sie <strong>wollte</strong> schon lange…"</div>
+            </div>
+            <div class="pad-card pc-yellow">
+                <h3>⏱️ Zeit:</h3>
+                <div class="step">🔵 10 Min. Breakout Room</div>
+                <div class="step">🟡 5 Min. Präsentation im Plenum</div>
+                <div class="step">🟢 Klasse stellt Fragen!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SLIDE 11 – ZUSAMMENFASSUNG
+═══════════════════════════════════════════════════ -->
+<div class="slide slide-11">
+    <h2>📌 Zusammenfassung</h2>
+    <div class="grid-3" style="margin-bottom:14px;">
+        <div class="pad-card pc-pink">
+            <span style="font-size:2em;">🔴</span>
+            <h3>sein &amp; haben → Präteritum</h3>
+            <div class="step">ich <strong>war</strong> / <strong>hatte</strong></div>
+            <div class="step">du <strong>warst</strong> / <strong>hattest</strong></div>
+            <div class="step">wir <strong>waren</strong> / <strong>hatten</strong></div>
+        </div>
+        <div class="pad-card pc-blue">
+            <span style="font-size:2em;">🔵</span>
+            <h3>Modalverben → Präteritum</h3>
+            <div class="step"><strong>konnte</strong> – Fähigkeit</div>
+            <div class="step"><strong>wollte</strong> – Wunsch</div>
+            <div class="step"><strong>musste / durfte / sollte</strong></div>
+        </div>
+        <div class="pad-card pc-green">
+            <span style="font-size:2em;">🟢</span>
+            <h3>Perfekt → Gespräch</h3>
+            <div class="step"><strong>haben</strong> + Partizip II</div>
+            <div class="step"><strong>sein</strong> + Partizip II (Bewegung!)</div>
+            <div class="step">ge- + Stamm + -t / -en</div>
+        </div>
+    </div>
+    <div class="info-box">
+        <p><strong>Wann was?</strong> &nbsp;
+        <span class="badge b-pink">Präteritum</span> → sein, haben, Modalverben, offizielle Texte &nbsp;|&nbsp;
+        <span class="badge b-green">Perfekt</span> → Gespräch, Chat, E-Mail, alle anderen Verben</p>
+    </div>
+    <div style="text-align:center; margin-top:18px; color:rgba(255,255,255,0.8); font-size:1.1em;">
+        🎉 Super gemacht! Viel Spaß beim Üben!
+    </div>
+</div>
+
+<!-- NAVIGATION -->
+<div class="nav">
+    <button onclick="go(-1)">← Zurück</button>
+    <span class="counter" id="counter">1 / 11</span>
+    <button onclick="go(1)">Weiter →</button>
+</div>
+
+<script>
+/* ── NAVIGATION ── */
+let cur = 0;
+const slides = document.querySelectorAll('.slide');
+const total  = slides.length;
+
+function go(d) {
+    slides[cur].classList.remove('active');
+    cur = (cur + d + total) % total;
+    slides[cur].classList.add('active');
+    document.getElementById('counter').textContent = `${cur+1} / ${total}`;
+    document.getElementById('progress').style.width = `${((cur+1)/total)*100}%`;
+    if (cur === 7) initMemory();
+}
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   go(-1);
+});
+
+document.getElementById('progress').style.width = `${(1/total)*100}%`;
+
+/* ── QUIZ ── */
+function qa(btn, correct) {
+    const btns = btn.parentElement.querySelectorAll('.quiz-btn');
+    btns.forEach(b => b.disabled = true);
+    if (correct) {
+        btn.classList.add('correct');
+        btn.textContent = '✅ ' + btn.textContent + ' – Richtig!';
+    } else {
+        btn.classList.add('wrong');
+        btn.textContent = '❌ ' + btn.textContent;
+        btns.forEach(b => {
+            if (b.onclick && b.onclick.toString().includes('true')) b.classList.add('correct');
+        });
+    }
+}
+
+/* ── BINGO ── */
+function markCell(el) {
+    el.classList.toggle('marked');
+    checkBingo();
+}
+
+function checkBingo() {
+    const cells = [...document.querySelectorAll('#bingoGrid .bingo-cell')];
+    const marked = cells.map(c => c.classList.contains('marked'));
+    const size = 4;
+    let bingo = false;
+
+    for (let r = 0; r < size; r++) {
+        if ([0,1,2,3].every(c => marked[r*size+c])) bingo = true;
+    }
+    for (let c = 0; c < size; c++) {
+        if ([0,1,2,3].every(r => marked[r*size+c])) bingo = true;
+    }
+    if ([0,5,10,15].every(i => marked[i])) bingo = true;
+    if ([3,6,9,12].every(i => marked[i])) bingo = true;
+
+    const msg = document.getElementById('bingoMsg');
+    msg.textContent = bingo ? '🎉 BINGO! Fantastisch!' : '';
+}
+
+/* ── MEMORY ── */
+const memPairs = [
+    {inf:'essen',    part:'gegessen'},
+    {inf:'fahren',   part:'gefahren'},
+    {inf:'schreiben',part:'geschrieben'},
+    {inf:'gehen',    part:'gegangen'},
+    {inf:'trinken',  part:'getrunken'},
+    {inf:'sehen',    part:'gesehen'},
+    {inf:'fliegen',  part:'geflogen'},
+    {inf:'sprechen', part:'gesprochen'},
+];
+
+let memFlipped = [], memMatched = 0, memLock = false;
+
+function initMemory() {
+    memFlipped = []; memMatched = 0; memLock = false;
+    document.getElementById('memScore').textContent = 'Paare: 0 / 8';
+
+    let cards = [];
+    memPairs.forEach((p,i) => {
+        cards.push({text: p.inf,  id: i, type:'inf'});
+        cards.push({text: p.part, id: i, type:'part'});
+    });
+    cards.sort(() => Math.random() - 0.5);
+
+    const colors = ['var(--pad-yellow)','var(--pad-teal)','var(--pad-pink)',
+                    'var(--pad-green)','var(--pad-purple)','var(--pad-orange)',
+                    'var(--pad-lavender)','#4cc9f0'];
+
+    const grid = document.getElementById('memoryGrid');
+    grid.innerHTML = '';
+    cards.forEach((c,idx) => {
+        const div = document.createElement('div');
+        div.className = 'mem-card';
+        div.dataset.id   = c.id;
+        div.dataset.text = c.text;
+        div.dataset.color = colors[c.id];
+        div.textContent  = '?';
+        div.onclick = () => flipMem(div);
+        grid.appendChild(div);
+    });
+}
+
+function flipMem(card) {
+    if (memLock) return;
+    if (card.classList.contains('matched')) return;
+    if (memFlipped.includes(card)) return;
+
+    card.classList.add('flipped');
+    card.textContent = card.dataset.text;
+    memFlipped.push(card);
+
+    if (memFlipped.length === 2) {
+        memLock = true;
+        const [a, b] = memFlipped;
+        if (a.dataset.id === b.dataset.id && a !== b) {
+            a.classList.add('matched'); b.classList.add('matched');
+            a.style.background = a.dataset.color;
+            b.style.background = b.dataset.color;
+            a.style.color = '#1a1a2e'; b.style.color = '#1a1a2e';
+            memMatched++;
+            document.getElementById('memScore').textContent = `Paare: ${memMatched} / 8`;
+            memFlipped = []; memLock = false;
+        } else {
+            setTimeout(() => {
+                a.classList.remove('flipped'); b.classList.remove('flipped');
+                a.textContent = '?'; b.textContent = '?';
+                memFlipped = []; memLock = false;
+            }, 900);
+        }
+    }
+}
+</script>
+
+</body></html>
